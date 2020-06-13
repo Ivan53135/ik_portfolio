@@ -1,0 +1,48 @@
+<svg width="592" height="520" viewBox="0 0 592 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 1">
+<rect width="592" height="520" fill="white"/>
+<g id="design">
+<g id="text-img">
+<path id="Vector" d="M400 324H224V180H400V324Z" fill="#FFA64D"/>
+</g>
+<g id="text-top">
+<path id="Vector_2" d="M528 180H416V196H528V180Z" fill="#333333"/>
+<path id="Vector_3" d="M528 212H416V228H528V212Z" fill="#333333"/>
+<path id="Vector_4" d="M528 244H416V260H528V244Z" fill="#333333"/>
+<path id="Vector_5" d="M528 276H416V292H528V276Z" fill="#333333"/>
+<path id="Vector_6" d="M528 308H512V324H528V308Z" fill="#333333"/>
+<path id="Vector_7" d="M496 308H416V324H496V308Z" fill="#333333"/>
+</g>
+<g id="text-bottom">
+<path id="Vector_8" d="M400 340H224V356H400V340Z" fill="#333333"/>
+<path id="Vector_9" d="M400 372H256V388H400V372Z" fill="#333333"/>
+<path id="Vector_10" d="M240 372H224V388H240V372Z" fill="#333333"/>
+</g>
+<g id="img-alert">
+<path id="Vector_11" d="M592 520H416V344H592V520Z" fill="#FFA64D"/>
+<path id="Vector_12" d="M560 376H448V392H560V376Z" fill="#333333"/>
+<path id="Vector_13" d="M560 408H448V424H560V408Z" fill="#333333"/>
+<path id="Vector_14" d="M560 440H448V456H560V440Z" fill="#333333"/>
+<path id="Vector_15" d="M560 472H544V488H560V472Z" fill="#333333"/>
+<path id="Vector_16" d="M528 472H448V488H528V472Z" fill="#333333"/>
+</g>
+<g id="dots-top">
+<g id="dot-top1">
+<path id="Vector_17" d="M240 119H224V135H240V119Z" fill="#333333"/>
+</g>
+<g id="dot-top2">
+<path id="Vector_18" d="M272 119H256V135H272V119Z" fill="#333333"/>
+</g>
+<g id="dot-top3">
+<path id="Vector_19" d="M304 119H288V135H304V119Z" fill="#333333"/>
+</g>
+</g>
+<g id="Vector_20">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M560 88H207V104H544V152H207V168H544V344H560V88ZM207 408V424H416V408H207Z" fill="#333333"/>
+<path d="M207 152V104V88H192V104V152V168H207V152Z" fill="#333333"/>
+<path d="M207 408V168H192V424H207V408Z" fill="#333333"/>
+</g>
+<path id="pencil" fill-rule="evenodd" clip-rule="evenodd" d="M207 56C207 25.12 181.872 0 151 0C120.128 0 95 25.12 95 56V409.88L132.264 484.424C135.84 491.56 143.016 496 151 496C158.984 496 166.16 491.56 169.736 484.424L207 409.88V125.5V56ZM191 56C191 33.944 173.056 16 151 16C128.944 16 111 33.944 111 56V80H191V56ZM111 112V96H191V112H111ZM143 400V128H111V400H143ZM191 400H159V128H191V400ZM146.584 477.264C148.264 480.64 153.736 480.648 155.424 477.264L186.056 416H115.944L146.584 477.264Z" fill="#333333"/>
+</g>
+</g>
+</svg>

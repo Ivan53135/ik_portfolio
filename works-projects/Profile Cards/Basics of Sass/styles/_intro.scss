@@ -1,0 +1,28 @@
+.introduction {
+    min-height: 100vh;
+    @include flex(column, center);
+    width: 90%;
+    margin: auto;
+
+    h2, 
+    p {
+        font-size: $text-size;
+        color: $text-color;
+        text-align: center;
+        margin: 2rem 0rem;
+    }
+
+    button {
+        padding: 1rem 3rem;
+        background: #112944;
+        transition: all 1s ease;
+        border: none;
+        cursor: pointer;
+        color: white;
+    
+        &:hover {
+            background: #74a6e0;
+            color: black;
+        }
+    }
+}
