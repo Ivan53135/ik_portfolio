@@ -1445,3 +1445,18 @@ to {
     background-color: rgb(250, 148, 74);
     transform: translateY(5px);
 }
+.copyright {
+    padding: 20px 0;
+
+    background-color: #1f245e;
+}
+
+.copyright__text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #fff;
+}
+.copyright__text span {
+    color: #fdad73;
+}
