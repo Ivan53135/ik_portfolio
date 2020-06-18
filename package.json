@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Ivan53135/ik_portfolio.github.io#readme",
   "dependencies": {
     "smooth-scrollbar": "^8.5.2"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
