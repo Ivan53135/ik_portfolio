@@ -27,6 +27,10 @@ $(document).ready(function() {
      e.preventDefault();
   });
 
+  $(".action").click(function() {
+    $(this).toggleClass('active');
+  })
+
   $(window).scroll(function() {
     if($(window).scrollTop() > 0) {
       $(".header").addClass("sticky");
