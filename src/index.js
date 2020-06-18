@@ -1,4 +1,5 @@
-
+import ScrollBar from 'smooth-scrollbar';
+ScrollBar.init(document.querySelector('#my-scrollbar'));
 
 
 $(document).ready(function() {
