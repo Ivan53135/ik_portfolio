@@ -1,8 +1,3 @@
-import Scrollbar from 'smooth-scrollbar';
-
-Scrollbar.init(document.querySelector('#my-scrollbar'));
-
-
 $(document).ready(function() {
 
   $(".card").tilt({
@@ -26,10 +21,6 @@ $(document).ready(function() {
 
      e.preventDefault();
   });
-
-  $(".action").click(function() {
-    $(this).toggleClass('active');
-  })
 
   $(window).scroll(function() {
     if($(window).scrollTop() > 0) {
