@@ -1,3 +1,121 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    -webkit-font-smoothing: antialiased;
+
+    background-color: rgb(252, 249, 249);
+    overflow-x: hidden;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.btn {
+    outline: none;
+    text-decoration: none;
+    background-color: #FE7A1A;
+    border: 1px solid #FE7A1A;
+    padding: 10px 30px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 30px;
+    transition: all .3s linear;
+}
+.secondary-btn {
+    border: 2px solid #FE7A1A;
+    background-color: rgb(252, 249, 249);
+    transition: all .3s linear;
+    margin-left: 10px;
+}
+.btn:hover {
+    background-color: rgb(250, 148, 74);
+    transform: translateY(5px);
+}
+
+/* Header
+===================*/
+.header {
+    width: 100%;
+    height: 20vh;
+    background-color: #31344e;
+    z-index: 10000000000000000000000000000000000000;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+.sticky {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12vh;
+}
+
+/* Logo */
+.sticky-ell {
+    width: 40px;
+    height: 40px;
+}
+
+.sticky-ell-txt{
+    font-size: 21px;
+}
+
+.header__logo-name{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+
+}
+/*End of Logo */
+/* Social */
+.social {
+    display: flex;
+    justify-content: right;
+    right: 0%;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+    background-color: #31344e;
+}
+svg{
+    fill: white;
+}
+svg:hover {
+    fill: white;
+    opacity: .8;
+}
+/* End of Social */
+
+/* End of Header
+===================*/
 .header__logo {
     display: flex;
     align-items: center;
