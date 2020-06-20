@@ -24,7 +24,6 @@ p {
     margin: 0 0 10px;
 }
 
-/* End of Components */
 .btn {
     outline: none;
     text-decoration: none;
@@ -37,6 +36,216 @@ p {
     font-size: 15px;
     margin-top: 30px;
     transition: all .3s linear;
+}
+.secondary-btn {
+    border: 2px solid #FE7A1A;
+    background-color: rgb(252, 249, 249);
+    transition: all .3s linear;
+    margin-left: 10px;
+}
+.btn:hover {
+    background-color: rgb(250, 148, 74);
+    transform: translateY(5px);
+}
+
+/* Header
+===================*/
+.header {
+    width: 100%;
+    height: 20vh;
+    background-color: #31344e;
+    z-index: 10000000000000000000000000000000000000;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 5%;
+}
+.sticky {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 12vh;
+}
+
+/* Logo */
+.sticky-ell {
+    width: 40px;
+    height: 40px;
+}
+
+.sticky-ell-txt{
+    font-size: 21px;
+}
+
+.header__logo-name{
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 20px;
+
+}
+/*End of Logo */
+/* Social */
+.social {
+    display: flex;
+    justify-content: right;
+    right: 0%;
+}
+
+.social__item {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+
+.social__icon {
+    display: block;
+    height: 18px;
+    background-color: #31344e;
+}
+svg{
+    fill: white;
+}
+svg:hover {
+    fill: white;
+    opacity: .8;
+}
+/* End of Social */
+
+/* End of Header
+===================*/
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header__logo-sign-ellipse {
+    width: 50px;
+    height: 50px;
+    background: #FE7A1A;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+.header__logo-sign-text {
+    position: absolute;
+    font-weight: medium;
+    font-size: 24px;
+    color: white;
+    transition: all .3s ease;
+}
+.it-1 {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+.sticky-it-1{
+    font-size: 16px;
+}
+.it-2{
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: 500;
+    font-size: 14px;
+    transition: all .3s ease;
+}
+.sticky-it-2{
+    font-size: 12px;
+}
+.title {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.heading {
+    color: black;
+    font-size: 36px;
+    letter-spacing: .2;
+    font-weight: 600;
+}
+.subtitle {
+    color: rgb(94, 94, 94);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#action{
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: orangered;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0,0,0, .1);
+    cursor: pointer;
+    z-index: 10000;
+    text-decoration: none;
+}
+#action span{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
+
+
+
+/* Navigation */
+.nav {
+    display: flex;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 20px;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.877);
+}
+
+.nav__link:first-child {
+    margin-left: 0px;
+}
+.nav__link:last-child {
+    margin-right: 30px;
+}
+.nav .current{
+    color: #FF9243;
+}
+/* End of Navigation */
+
+/* Intro
+===================*/
+
+.intro {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url(/banner.11e2c9bd.jpg) no-repeat center;      
+    background-size: cover;
+    background-attachment: fixed;
+}
+.intro__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
 }
 .main-btn {
     width: 20%;
@@ -71,229 +280,10 @@ p {
     95% {transform: scale(1.05) rotateZ(5deg)}
     100% {transform: scale(1) rotateZ(0)}
 }
-.secondary-btn {
-    border: 2px solid #FE7A1A;
-    background-color: rgb(252, 249, 249);
-    transition: all .3s linear;
-    margin-left: 10px;
-}
-.btn:hover {
-    background-color: rgb(250, 148, 74);
-    transform: translateY(5px);
-}
-.title {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-.heading {
-    color: black;
-    font-size: 36px;
-    letter-spacing: .2;
-    font-weight: 600;
-}
-.subtitle {
-    color: rgb(94, 94, 94);
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: 500;
-}
-/* End of Components */
-
-#action{
-    position: fixed;
-    bottom: 30px;
-    right: 15px;
-    width: 50px;
-    height: 50px;
-    background: orangered;
-    border-radius: 50%;
-    box-shadow: 0 5px 5px rgba(0,0,0, .1);
-    cursor: pointer;
-    z-index: 10000;
-    text-decoration: none;
-}
-#action span{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 2em;
-    transition: .3s ease-in-out;
-    opacity: 1;
-}
-
-/* Header
-===================*/
-.header {
-    width: 100%;
-    height: 20vh;
-    background-color: #31344e;
-    z-index: 10000000000000000000000000000000000000;
-    position: relative;
-    transition: .3s;
-}
-.sticky {
-    position: sticky;
-    top: 0%;
-    left: 0%;
-    width: 100%;
-    height: 12vh;
-}
-.header__inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    margin: 0 50px;
-}
-
-/* Logo */
-.header__logo {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-}
-.header__logo-sign-ellipse {
-    width: 50px;
-    height: 50px;
-    background: #FE7A1A;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3s ease;
-}
-.sticky-ell {
-    width: 40px;
-    height: 40px;
-}
-.header__logo-sign-text {
-    position: absolute;
-    font-weight: medium;
-    font-size: 24px;
-    color: white;
-    transition: all .3s ease;
-}
-.sticky-ell-txt{
-    font-size: 21px;
-}
-
-.header__logo-name{
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 0 20px;
-
-}
-.it-1 {
-    color: white;
-    font-weight: 600;
-    font-size: 18px;
-    margin-bottom: 10px;
-    transition: all .3s ease;
-}
-.sticky-it-1{
-    font-size: 16px;
-}
-.it-2{
-    color: rgba(255, 255, 255, 0.877);
-    font-weight: 500;
-    font-size: 14px;
-    transition: all .3s ease;
-}
-.sticky-it-2{
-    font-size: 12px;
-}
-
-/*End of Logo */
-
-/* Navigation */
-.nav {
-    display: flex;
-    text-transform: uppercase;
-    margin-left: 100px;
-    overflow: hidden;
-}
-
-.nav__link {
-    margin-left: 30px;
-    padding: 1rem;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.877);
-}
-
-.nav__link:first-child {
-    margin-left: 0px;
-}
-.nav__link:last-child {
-    margin-right: 30px;
-}
-.nav .current{
-    color: #FF9243;
-}
-/* End of Navigation */
-
-/* Social */
-.social {
-    display: flex;
-    justify-content: right;
-    right: 0%;
-}
-
-.social__item {
-    display: flex;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-}
-
-.social__icon {
-    display: block;
-    height: 18px;
-    background-color: #31344e;
-}
-svg{
-    fill: white;
-}
-svg:hover {
-    fill: white;
-    opacity: .8;
-}
-/* End of Social */
-
-/* End of Header
-===================*/
-
-/* Intro
-===================*/
-
-.intro {
-    height: 100vh;
-    width: 100%;
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2) ), url(/banner.72463ed6.jpg) no-repeat center;      
-    background-size: cover;
-    background-attachment: fixed;
-}
-.intro__inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
-}
 
 .intro__title {
     color: white;
-    font-size: 47px;
+    font-size: 55px;
     text-align: center;
     letter-spacing: 2px;
 }
@@ -322,9 +312,7 @@ svg:hover {
 /* Main section */
 .about-inner {
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
-    box-sizing: border-box;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -340,43 +328,36 @@ svg:hover {
     padding-left: 50px;
 }
 .img-box {
-    width: 50%;
-    flex: 0 0 50%;
+    width: 40%;
+
 }
 .about-img {
-    max-width: 80%;
+    max-width: 100%;
     height: auto;
 }
-.about-par {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-size: 18px;
-}
 
-.line {
-    border-left: 2px solid rgb(255, 203, 167);
-    height: 15vh;
-    position: absolute;
-    z-index: 10;
-    left: 50%;
-    transform: translate(-50%, -25vh);
-}
 .about-greetings {
     background: -webkit-gradient(linear, left top, right top, from(#38d39f), to(#38a4d3));
     background: linear-gradient(left, #38d39f, #38a4d3);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 36px;
+    font-size: 40px;
     letter-spacing: .2;
     font-weight: 600;
+}
+.about-par {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 350;
 }
 .about-svg-anim {
     width: 400px;
     position: absolute;
     background-color: transparent;
-    top: 50%;
-    left: 60%;
+    top: 63%;
+    left: 63%;
 }
 /* ABOUT SVG ANIMATION */
 #first-sqr {
@@ -818,6 +799,7 @@ svg:hover {
     text-align: center;
     width: 100%;
     position: relative;
+    margin-top: 75px;
 }
 .services-container {
     display: flex;
@@ -990,8 +972,10 @@ to {
 .works {
     height: 100%;
     background-color: rgb(30, 1, 68);
+    padding-bottom: 15vh;
     text-align: center;
     width: 100%;
+    position: relative;
 }
 .w-t {
     padding-top: 100px;
@@ -1164,6 +1148,13 @@ to {
     height: 300px;
     opacity: 0.8;
 }
+.works-svg-anim{
+    position: absolute;
+    background-color: transparent;
+    bottom: 0%;
+    right: 5%;
+    padding-bottom: 3vh;
+}
 /* End of Works
 ===================*/
 
@@ -1198,7 +1189,7 @@ to {
     transform: translateZ(20px)
 }
 .card-1, .card-2, .card-3 {
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(/pricing-card.c073481b.jpeg) center;
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url(/pricing-card.38d47ec9.jpeg) center;
     background-size: cover;
     background-repeat: no-repeat;
     box-shadow: 0px 0px 50px #555;
