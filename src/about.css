@@ -1,0 +1,109 @@
+.header__logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.header__logo-sign-ellipse {
+    width: 70px;
+    height: 70px;
+    background: #FE7A1A;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+}
+.header__logo-sign-text {
+    position: absolute;
+    font-weight: medium;
+    font-size: 34px;
+    color: white;
+    transition: all .3s ease;
+}
+.it-1 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    transition: all .3s ease;
+}
+.sticky-it-1{
+    font-size: 18px;
+}
+.it-2{
+    color: rgba(255, 255, 255, 0.877);
+    font-weight: 500;
+    font-size: 16px;
+    transition: all .3s ease;
+}
+.sticky-it-2{
+    font-size: 14px;
+}
+.social__item {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+}
+.previous{
+    height: 50px;
+    width: 12vw;
+    padding: 10px;
+    background: #39e2d7;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    border-radius: 100px;
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: none;
+}
+.previous:hover{
+    background: #19f7e8;
+}
+.arrow-txt{
+    position: absolute;
+    right: 15%;
+    font-size: 15px;
+    font-weight: 800;
+    transition: .5s;
+    color: rgb(13, 0, 54);
+}
+.previous span{
+    position: absolute;
+    left: 15%;
+    width: 20px;
+    height: 20px;
+    border: 4px solid rgb(13, 0, 54);
+    transition: .5s;
+    transform:  rotate(-45deg);
+    border-right: none;
+    border-bottom: none;
+}
+.previous span::before{
+    transform: translateY(50%);
+    top: 50%;
+}
+.previous:hover .arrow-txt{
+    right: 10%;
+}
+.previous:hover span{
+    left: 10%;
+}
+.previous span:before{
+    content: '';
+    position: absolute;
+    width: 38px;
+    height: 4px;
+    background: rgb(13, 0, 54);
+    transform-origin: left;
+    transform: rotate(45deg) translate(-20px,4px) scaleX(0);
+    transition: .5s;
+}
+.previous:hover span:before{
+    transform: rotate(45deg) translate(-20px,4px) scaleX(1);
+}
