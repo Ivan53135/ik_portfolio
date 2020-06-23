@@ -350,7 +350,7 @@ svg:hover {
     padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
-    font-weight: 350;
+    font-weight: 400;
 }
 .about-svg-anim {
     width: 400px;
@@ -862,6 +862,7 @@ svg:hover {
     font-size: 14px;
     line-height: 1.7;
     color: #6c7279;
+    font-weight: 700;
 }
 .services-btn {
     display: flex;
@@ -1143,7 +1144,7 @@ to {
 .tt-r{
     text-align: right;
 }
-.ad-ps, .pr-item{
+.ad-ps, .pr-item, .des-3{
     width: 300px;
     height: 300px;
     opacity: 0.8;
@@ -1154,6 +1155,78 @@ to {
     bottom: 0%;
     right: 5%;
     padding-bottom: 3vh;
+}
+#right-arm{
+    animation: arm-moving 4s ease-in-out infinite;
+    transform-origin: left;
+    transform-box: fill-box;
+}
+@keyframes arm-moving{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    33%{
+        transform: rotateZ(-30deg);
+    }
+    66%{
+        transform: rotateZ(-30deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+#picture-2{
+    animation: picture-moving 4s ease-in-out infinite;
+}
+@keyframes picture-moving{
+    0%{
+        transform: translate(0,0);
+    }
+    33%{
+        transform: translate(-16px,-16px);
+    }
+    66%{
+        transform: translate(-16px,-16px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+#picture-1{
+    animation: picture-move 4s ease-in-out infinite;
+}
+@keyframes picture-move{
+    0%{
+        transform: translate(0,0);
+    }
+    33%{
+        transform: translate(-12px,-10px);
+    }
+    66%{
+        transform: translate(-12px,-10px);
+    }
+    100%{
+        transform: translate(0,0);
+    }
+}
+#girl-head{
+    animation: girl-head 4s ease-in-out infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+@keyframes girl-head{
+    0%{
+        transform: rotateZ(0deg);
+    }
+    33%{
+        transform: rotateZ(-15deg);
+    }
+    66%{
+        transform: rotateZ(-15deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
 }
 /* End of Works
 ===================*/
