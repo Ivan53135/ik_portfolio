@@ -820,9 +820,9 @@
                     </li>
                 </ul>
             </div>
-            <form class="contactForm">
+            <form class="contactForm" action="POST" data-netlify="true">
                 <h2>Send a Message</h2>
-                <form class="formBox" action="POST" data-netlify="true">
+                <div class="formBox">
                     <div class="inputBox w50">
                         <input type="text" name="first name" id="first_name" required>
                         <span>First Name</span>
@@ -846,7 +846,7 @@
                     <div class="inputBox w100">
                         <input type="submit" value="Send">
                     </div>
-                </form>
+                </div>
             </form>
         </div>
     </section>
