@@ -225,5 +225,10 @@ svg:hover {
 .previous:hover span:before{
     transform: rotate(45deg) translate(-20px,4px) scaleX(1);
 }
+/* .instagram-feed{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
 
 /*# sourceMappingURL=/about.445b316b.css.map */

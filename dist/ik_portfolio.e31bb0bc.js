@@ -151,7 +151,7 @@ $(document).ready(function () {
     ;
     var position = $(this).scrollTop();
 
-    if (position >= 3500) {
+    if (position >= 3670) {
       $('.card-1').addClass('moveFromLeft');
       $('.card-2').addClass('moveFromBottom');
       $('.card-3').addClass('moveFromRight');
@@ -218,7 +218,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51553" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57603" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
