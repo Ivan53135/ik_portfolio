@@ -820,34 +820,34 @@
                     </li>
                 </ul>
             </div>
-            <div class="contactForm">
+            <form class="contactForm">
                 <h2>Send a Message</h2>
-                <div class="formBox">
+                <form class="formBox" action="POST" data-netlify="true">
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" name="first name" id="first_name" required>
                         <span>First Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" name="last name" id="last_name" required>
                         <span>Last Name</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="email" required>
+                        <input type="email" name="email" id="email" required>
                         <span>Email Address</span>
                     </div>
                     <div class="inputBox w50">
-                        <input type="text" required>
+                        <input type="text" name="mobile number" id="mobile_number" required>
                         <span>Mobile Number</span>
                     </div>
                     <div class="inputBox w100">
-                        <textarea type="text" required></textarea>
+                        <textarea type="text" name="message" id="message" required></textarea>
                         <span>Write your message here...</span>
                     </div>
                     <div class="inputBox w100">
                         <input type="submit" value="Send">
                     </div>
-                </div>
-            </div>
+                </form>
+            </form>
         </div>
     </section>
     <!-- end of pricing -->
