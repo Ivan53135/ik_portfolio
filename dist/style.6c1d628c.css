@@ -12,7 +12,7 @@ body{
     overflow-x: hidden;
     width: 100vw; 
     max-width: 100%; 
-    overflow-anchor: none;
+    font-size: 0.75%;
 }
 h1 {
     font-size: 2.6rem;
@@ -50,6 +50,28 @@ a {
     margin-top: 30px;
     transition: all .3s linear;
     border: 1px solid #ffd3e1;
+}
+.section-heading{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.section-title{
+    font-size: 26px;
+    font-weight: 800;
+}
+.section-subtitle{
+    font-size: 22px;
+    font-weight: 600;
+}
+hr {
+    width: 500px;
+    height: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#666;
+    border: 0 none;
+    margin: 10px 0;
 }
 
 .header{
@@ -188,6 +210,7 @@ a {
     margin: 0 auto;
     margin-bottom: 20vh;  
     z-index: 1;
+    overflow-anchor: none;
 }
 .search-back{
     background: url('/search-back.ac3f726d.svg');
@@ -211,7 +234,7 @@ a {
     display: flex;
     justify-content: center;
 }
-ul {
+.search-nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -219,17 +242,17 @@ ul {
     background-color: #333;
 }
   
-li {
+.search-nav li {
     align-items: center;
     border-right: 1px solid #bbb;
     list-style: none;
     display: inline-block;
 }
 
-li:last-child {
+.search-nav li:last-child {
     border-right: none;
 }
-li a {
+.search-nav li a {
     display: block;
     color: white;
     text-align: center;
@@ -238,7 +261,7 @@ li a {
     font-size: 14px;
 }
 
-li a:hover:not(.active) {
+.search-nav li a:hover:not(.active) {
     background-color: #111;
 }
 
@@ -284,22 +307,55 @@ li a:hover:not(.active) {
     /* IE 10+ */
     color: #fff;
 }
-
-.search-footer{
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
+.search-title{
+    font-size: 4rem;
+    font-weight: 500;
 }
-.stats-item{
-    display: inline-block;
-    height: 100%;
-    padding: 30px;
+.search-subtitle{
+    font-size: 3rem;
+    font-weight: 500;
+}
 
+
+.destinations{
+    min-height: 100vh;
+    width: 95%;
+    margin: 0px auto;
+}
+
+.dest-head{
     text-align: left;
+    margin-left: 3%;
+    padding-top: 30vh;
 }
-.stats-item__logo{
-    width: 50px;
-    height: 50px;
+.dest-t{
+    color: #6b3a02;
+}
+.destinations hr{
+    margin-left: 0;
+    width: 300px;
+    color: #6b3a02;
+}
+.dest-subt{
+    font-size: 18px;
+    color: #757575;
+    font-weight: 300;
+}
+.destinations-card {
+    height: 400px;
+    width: 300px;
+    background-color: #ffd3e1;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+.first-dest-card{
+    background: url(/d-card-1.9abe7413.png);
+}
+.second-dest-card{
+    background: url(/d-card-2.eb1b1316.png);
+}
+.third-dest-card{
+    background: url(/d-card-3.c7529bd5.png);
 }
 
 /*# sourceMappingURL=/style.6c1d628c.css.map */
