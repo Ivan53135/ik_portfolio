@@ -1038,10 +1038,10 @@ to {
     animation: movinganim 1s linear;
 }
 .movecomps {
-    animation: movinganim 1.5s linear;
+    animation: movinganim 1.s linear;
 }
 .movecompt {
-    animation: movinganim 2s linear; 
+    animation: movinganim 1.5s linear; 
 }
 
 @keyframes movinganim {
