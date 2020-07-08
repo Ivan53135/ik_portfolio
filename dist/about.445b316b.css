@@ -47,6 +47,31 @@ p {
     background-color: rgb(250, 148, 74);
     transform: translateY(5px);
 }
+#action{
+    position: fixed;
+    bottom: 30px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+    background: orangered;
+    border-radius: 50%;
+    box-shadow: 0 5px 5px rgba(0,0,0, .1);
+    cursor: pointer;
+    z-index: 10000;
+    text-decoration: none;
+}
+#action span{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2em;
+    transition: .3s ease-in-out;
+    opacity: 1;
+}
 
 /* Header
 ===================*/
@@ -66,7 +91,7 @@ p {
     top: 0%;
     left: 0%;
     width: 100%;
-    height: 12vh;
+    height: 15vh;
 }
 
 /* Logo */
@@ -86,6 +111,7 @@ p {
 
 }
 /*End of Logo */
+
 /* Social */
 .social {
     display: flex;
@@ -230,5 +256,6 @@ svg:hover {
     justify-content: center;
     align-items: center;
 } */
+
 
 /*# sourceMappingURL=/about.445b316b.css.map */
