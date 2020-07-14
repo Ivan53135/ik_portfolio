@@ -1,6 +1,3 @@
-var btn1 = document.getElementById("features_img");
-new HoverButton(btn1);
-
 $(window).on("load", function () {
 
   $(".loader .inner").fadeOut(500, function () {
