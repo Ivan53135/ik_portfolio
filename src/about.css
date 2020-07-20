@@ -10,19 +10,19 @@ body {
   overflow-x: hidden;
 }
 .loader {
-	width: 100%;
-	height: 100%;
-	background-color: #fff;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	z-index: 100000000;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 100000000;
 }
 
 .loader .inner {
-	width: 100%;
-	height: 100%;
-	background: url(../assets/loader-2.gif) center center no-repeat;
+  width: 100%;
+  height: 100%;
+  background: url(../assets/loader-2.gif) center center no-repeat;
 }
 
 *,
@@ -73,7 +73,7 @@ ul {
   background-color: rgb(250, 148, 74);
   transform: translateY(5px);
 }
-.heading{
+.heading {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -91,7 +91,7 @@ ul {
   color: #38d3cb;
   font-size: 20px;
 }
-.subtitle{
+.subtitle {
   font-size: 18px;
   width: 70%;
   padding-top: 15px;
@@ -303,11 +303,135 @@ svg:hover {
 .previous:hover span:before {
   transform: rotate(45deg) translate(-20px, 4px) scaleX(1);
 }
+
 /* .instagram-feed{
     display: flex;
     justify-content: center;
     align-items: center;
 } */
+
+/* Promises */
+.promises {
+  width: 100%;
+  height: 80vh;
+  margin: 10% 0;
+}
+
+/* Problems */
+.problems{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 40px;
+}
+.problems-heading {
+  text-align: left;
+  padding: 0 100px;
+}
+.problem-title{
+  font-size: 24px;
+  padding-top: 40px;
+  color: #31344e;
+  font-weight: bolder;
+}
+.problem-title span{
+  color: #ffd900;
+}
+.problem-subtitle{
+  font-size: 18px;
+  padding: 15px 0;
+  color: #373e70;
+  font-weight: bolder;
+}
+.problem-par{
+  padding: 0 40px 0 100px;
+}
+.problems-banner{
+  width: 800px;
+  height: 500px;
+  background: linear-gradient(45deg,#36D1DC, #5B86E5);
+}
+.mousemove-slider{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: url(../assets/images/problems-back.jpg) no-repeat center center / cover;
+  margin-right: 50px;
+}
+.ellips {
+	background: url(../assets/images/ellips.png) no-repeat center center / contain;
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: -10%;
+  right: 0%;
+}
+
+.lines-dot {
+	background: url(../assets/images/lines-dot.png) no-repeat center center / contain;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    bottom: 10%;
+    left: -14%;
+}
+
+.plus-yellow {
+  background: url(../assets/images/plus-yellow.png) no-repeat center center / contain;
+  width: 6%;
+  height: 6%;
+  position: absolute;
+  top: 41%;
+  left: 24%;;
+  max-width: 67px;
+  max-height: 67px;
+  animation: plus-spin infinite linear;
+  transform-origin: center;
+}
+@keyframes plus-spin{
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}
+
+.plus-dots {
+	background: url(../assets/images/plus-dots.png) no-repeat center center / contain;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    bottom: 10%;
+    right: 0%;
+    max-width: 290px;
+    max-height: 290px;
+}
+
+.triangles {
+	background: url(../assets/images/triangles.png) no-repeat center center / contain;
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    top: 20%;
+    right: 10%;
+    max-width: 165px;
+    max-height: 165px;
+}
+
+.line-wave {
+	background: url(../assets/images/line-wave.png) no-repeat center center / contain;
+    width: 30%;
+    height: 30%;
+    position: absolute;
+    top: 20%;
+    left: -13%;
+    max-width: 260px;
+    max-height: 233px;
+}
+/* End of Problems ;) */
+
+/* End of Promises */
 
 /* Features */
 
@@ -347,4 +471,20 @@ svg:hover {
 }
 .features-items_title {
   padding: 15px 0;
+}
+.copyright {
+  padding: 20px 0;
+
+  background-color: #1f245e;
+}
+
+.copyright__text {
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #fff;
+}
+.copyright__text a {
+  color: #fdad73;
+  text-decoration: none;
 }
