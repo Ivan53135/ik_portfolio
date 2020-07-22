@@ -117,83 +117,148 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"index.js":[function(require,module,exports) {
-$(window).on("load", function () {
-  $(".loader .inner").fadeOut(500, function () {
-    $(".loader").fadeOut(750);
-  });
-});
-$(document).ready(function () {
-  $(".card").tilt({
-    maxTilt: 5,
-    glare: true,
-    maxGlare: .2
-  });
-  var headerHeight = $('header').outerHeight();
-  $(".nav__link").click(function (e) {
-    $(this).addClass('current').siblings().removeClass('current');
-    var linkHref = $(this).attr('href');
-    $('html, body').animate({
-      scrollTop: $(linkHref).offset().top - headerHeight
-    }, 1000);
-    e.preventDefault();
-  });
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 0) {
-      $(".header").addClass("sticky");
-      $(".header__logo-sign-ellipse").addClass("sticky-ell");
-      $(".header__logo-sign-text").addClass("sticky-ell-txt");
-      $(".it-1").addClass("sticky-it-1");
-      $(".it-2").addClass("sticky-it-2");
-    } else {
-      $(".header").removeClass("sticky");
-      $(".header__logo-sign-ellipse").removeClass("sticky-ell");
-      $(".header__logo-sign-text").removeClass("sticky-ell-txt");
-      $(".it-1").removeClass("sticky-it-1");
-      $(".it-2").removeClass("sticky-it-2");
-    }
+})({"src/js/about.js":[function(require,module,exports) {
+$(function () {
+  /* Параллакс от движения мыши */
+  if ($(window).width() > 960) {
+    $("body").parallax({
+      elements: [{
+        selector: ".ellips",
+        properties: {
+          x: {
+            right: {
+              initial: 0,
+              multiplier: 0.002,
+              unit: "%",
+              invert: false
+            }
+          },
+          y: {
+            top: {
+              initial: -10,
+              multiplier: 0.002,
+              unit: "%",
+              invert: true
+            }
+          }
+        }
+      }, {
+        selector: ".lines-dot",
+        properties: {
+          x: {
+            left: {
+              initial: -14,
+              multiplier: 0.0009,
+              unit: "%",
+              invert: false
+            }
+          },
+          y: {
+            bottom: {
+              initial: -10,
+              multiplier: 0.009,
+              unit: "%",
+              invert: true
+            }
+          }
+        }
+      }, {
+        selector: ".plus-yellow",
+        properties: {
+          x: {
+            left: {
+              initial: 30,
+              multiplier: 0.01,
+              unit: "%",
+              invert: false
+            }
+          },
+          y: {
+            top: {
+              initial: -40,
+              multiplier: 0.01,
+              unit: "%",
+              invert: true
+            }
+          }
+        }
+      }, {
+        selector: ".mousemove-slider",
+        properties: {
+          x: {
+            left: {
+              initial: 9,
+              multiplier: 0.0003,
+              unit: "%",
+              invert: false
+            }
+          }
+        }
+      }, {
+        selector: ".plus-dots",
+        properties: {
+          x: {
+            left: {
+              initial: 70,
+              multiplier: 0.005,
+              unit: "%",
+              invert: false
+            }
+          },
+          y: {
+            top: {
+              initial: -80,
+              multiplier: 0.005,
+              unit: "%",
+              invert: true
+            }
+          }
+        }
+      }, {
+        selector: ".line-wave",
+        properties: {
+          x: {
+            left: {
+              initial: -20,
+              multiplier: 0.002,
+              unit: "%",
+              invert: false
+            }
+          },
+          y: {
+            top: {
+              initial: 10,
+              multiplier: 0.0009,
+              unit: "%",
+              invert: true
+            }
+          }
+        }
+      }, {
+        selector: ".triangles",
+        properties: {
+          x: {
+            left: {
+              initial: 50,
+              multiplier: 0.005,
+              unit: "%",
+              invert: false
+            }
+          },
+          y: {
+            top: {
+              initial: -5,
+              multiplier: 0.005,
+              unit: "%",
+              invert: true
+            }
+          }
+        }
+      }]
+    });
+  }
 
-    ;
-    var position = $(this).scrollTop();
-
-    if (position >= 3670) {
-      $('.card-1').addClass('moveFromLeft');
-      $('.card-2').addClass('moveFromBottom');
-      $('.card-3').addClass('moveFromRight');
-    } else {
-      $('.card-1').removeClass('moveFromLeft');
-      $('.card-2').removeClass('moveFromBottom');
-      $('.card-3').removeClass('moveFromRight');
-    }
-
-    ;
-
-    if (position >= 1900) {
-      $('.sites').addClass('site-anim');
-    } else {
-      $('.sites').removeClass('site-anim');
-    }
-
-    ;
-
-    if (position >= 2300) {
-      $('.designs').addClass('design-anim');
-    } else {
-      $('.designs').removeClass('design-anim');
-    }
-
-    ;
-
-    if (position >= 2800) {
-      $('.comp1').addClass('movecompf');
-      $('.comp2').addClass('movecomps');
-      $('.comp3').addClass('movecompt');
-    } else {
-      $('.comp1').removeClass('movecompf');
-      $('.comp2').removeClass('movecomps');
-      $('.comp3').removeClass('movecompt');
-    }
-  });
+  ;
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -399,5 +464,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/ik_portfolio.e31bb0bc.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","src/js/about.js"], null)
+//# sourceMappingURL=/about.0893ca13.js.map
