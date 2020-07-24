@@ -297,22 +297,6 @@
         }
     }
     
-    &-copyright-paragraph {
-        font-family: $font-josefinSans;
-        font-size: 18px;
-        color: $color-secondary;
-        @include textStyles(capitalize);
-        
-        @media(max-width: 800px) {
-            width: 70%;
-            margin: auto;
-            text-align: center;
-        }
-        
-        @media(max-width: 500px) {
-            font-size: 14px;
-        }
-    }
 }
 
 
