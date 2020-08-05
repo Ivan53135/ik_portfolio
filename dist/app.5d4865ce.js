@@ -117,35 +117,10 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"assets/works-projects/Wotrald/js/app.js":[function(require,module,exports) {
-$(document).ready(function () {
-  $(window).scroll(function () {
-    if ($(window).scrollTop() > 0) {
-      $(".header").addClass("sticky");
-    } else {
-      $(".header").removeClass("sticky");
-    }
-  });
-  $(".slider").slick({
-    arrows: true,
-    dots: true,
-    slidesToShow: 3,
-    autoplay: true,
-    speed: 1000,
-    autoplaySpeed: 800,
-    responsive: [{
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 2
-      }
-    }, {
-      breakpoint: 550,
-      settings: {
-        slidesToShow: 1
-      }
-    }]
-  });
-});
+})({"assets/works-projects/The Bohrach/app.js":[function(require,module,exports) {
+var year = new Date().getFullYear();
+var date = "Copyright &copy; IK Corporation ".concat(year, ". All Rights Reserved.");
+document.getElementsByClassName('copyright_date')[0].innerHTML = date;
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -350,5 +325,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/works-projects/Wotrald/js/app.js"], null)
-//# sourceMappingURL=/app.5a2ec622.js.map
+},{}]},{},["node_modules/parcel-bundler/src/builtins/hmr-runtime.js","assets/works-projects/The Bohrach/app.js"], null)
+//# sourceMappingURL=/app.5d4865ce.js.map

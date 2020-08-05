@@ -325,7 +325,7 @@ hr {
 }
 .destinations-card {
   width: 25vw;
-  height: 80vh;
+  height: 90vh;
   border-radius: 10px;
   box-shadow: 2px 10px 12px rgba(0, 0, 0, 0.5);
   display: flex;

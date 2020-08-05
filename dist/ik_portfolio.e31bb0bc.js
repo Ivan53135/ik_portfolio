@@ -194,6 +194,9 @@ $(document).ready(function () {
       $('.comp3').removeClass('movecompt');
     }
   });
+  var year = new Date().getFullYear();
+  var date = "Copyright &copy; IK Corporation ".concat(year, ". All Rights Reserved.");
+  document.getElementsByClassName('copyright_date')[0].innerHTML = date;
 });
 },{}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -223,7 +226,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54267" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53871" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
