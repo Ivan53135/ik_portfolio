@@ -1703,7 +1703,7 @@ textarea:valid ~ span {
   .subtitle {
     font-size: 20px;
   }
-  .title{
+  .title {
     width: 95%;
     margin: auto;
   }
@@ -1777,7 +1777,7 @@ textarea:valid ~ span {
     margin-top: 0;
     height: 50%;
   }
-  .services-container{
+  .services-container {
     padding-bottom: 0;
     margin: 45px 10px;
   }
@@ -1788,7 +1788,7 @@ textarea:valid ~ span {
     padding-left: 10px;
     margin-bottom: 50px;
   }
-  
+
   .service-item__img {
     margin-bottom: 20px;
     width: 50px;
@@ -1829,5 +1829,54 @@ textarea:valid ~ span {
   }
   .services-svg-anim {
     display: none;
+  }
+
+  .works-sec-title,
+  .tt-m,
+  .tt-r {
+    text-align: left;
+  }
+  .sites, .designs, .components {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+    -webkit-overflow-scrolling: touch;
+    width: 30rem;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .works-item{
+    flex: 0 0 auto;
+  }
+  .site-anim, .design-anim, .movecompf, .movecomps, .movecompt{
+    animation: none;
+  }
+  .works-svg-anim {
+    bottom: 2.5%;
+    left: -5%;
+    padding-bottom: 0;
+  }
+
+  .card-container {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .pricing-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .moveFromLeft,
+  .moveFromRight,
+  .moveFromBottom {
+    animation: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .card-1{
+     margin-top: 30px;
   }
 }
