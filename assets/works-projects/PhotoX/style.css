@@ -52,7 +52,7 @@ body {
   
   .custom-navbar {
     padding: 5px 30px;
-    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .9));
   }
   /* end of navbar */
   
@@ -101,6 +101,9 @@ body {
     border: 3px solid #eee;
     margin: auto;
   }
+  .mission_icon{
+    padding-bottom: 15px;
+  }
   
   .fromLeft {
     animation-name: fromLeft;
@@ -137,7 +140,7 @@ body {
   
   /* collection */
   .card-shadow {
-    box-shadow: 5px 8px 20px #444;
+    box-shadow: 5px 8px 25px rgb(49, 49, 49);
   }
   
   .heading {
@@ -150,10 +153,10 @@ body {
     width: 70%;
     cursor: pointer;
     opacity: .7;
-    transition: all .5s;
+    transition: all .3s;
   }
   
-  .heading:hover {
+  .cardigan:hover .heading{
     opacity: 1;
   }
   /* end of collection */

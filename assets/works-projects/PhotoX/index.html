@@ -13,7 +13,7 @@
       </head>
 <body>
   <!-- header -->
-  <header>
+  <header class="header">
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg fixed-top nav-menu">
       <a href="#" class="navbar-brand text-light text-uppercase"><span class="h2 font-weight-bold">photo</span><span class="h1">X</span></a>
@@ -25,25 +25,25 @@
       <div class="collapse navbar-collapse justify-content-end text-uppercase font-weight-bold" id="myNavbar">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item nav-active">Home</a>
+            <a href="#home" class="nav-link m-2 menu-item nav-active">Home</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Mission</a>
+            <a href="#mission" class="nav-link m-2 menu-item">Mission</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Collection</a>
+            <a href="#collection" class="nav-link m-2 menu-item">Collection</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Gallery</a>
+            <a href="#gallery" class="nav-link m-2 menu-item">Gallery</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Customers</a>
+            <a href="#customers" class="nav-link m-2 menu-item">Customers</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Pricing</a>
+            <a href="#pricing" class="nav-link m-2 menu-item">Pricing</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link m-2 menu-item">Contact</a>
+            <a href="#contact" class="nav-link m-2 menu-item">Contact</a>
           </li>
         </ul>
       </div>
@@ -51,7 +51,7 @@
     <!-- end of navbar -->
 
     <!-- banner -->
-    <div class="text-light text-md-right text-center banner">
+    <div id="home" class="text-light text-md-right text-center banner">
       <h1 class="display-4 banner-heading">Welcome to <span class="text-uppercase">photo</span><span class="display-3">X</span></h1>
       <p class="lead banner-par">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
     </div>
@@ -60,7 +60,7 @@
   <!-- end of header -->
 
   <!-- mission -->
-  <section class="p-5 mission">
+  <section id="mission" class="p-5 mission">
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-white text-center">
@@ -73,17 +73,17 @@
       <!-- end of title -->
       <div class="row my-5">
         <div class="col-md-4 text-center">
-          <i class="fas fa-cogs fa-5x text-danger mb-4"></i>
+          <img src="./images/puzzle.svg" class="mission_icon">
           <h1 class="text-white mb-3">Creativity</h1>
           <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In iure odio fugit! A non assumenda, quibusdam corporis ea earum quis molestias. Vero est quam error.</p>
         </div>
         <div class="col-md-4 text-center">
-          <i class="far fa-thumbs-up fa-5x text-danger mb-4"></i>
+          <img src="./images/success.svg" class="mission_icon">
           <h1 class="text-white mb-3">Quality</h1>
           <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In iure odio fugit! A non assumenda, quibusdam corporis ea earum quis molestias. Vero est quam error.</p>
         </div>
         <div class="col-md-4 text-center">
-          <i class="far fa-handshake fa-5x text-danger mb-4"></i>
+          <img src="./images/exchange.svg" class="mission_icon">
           <h1 class="text-white mb-3">Experience</h1>
           <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. In iure odio fugit! A non assumenda, quibusdam corporis ea earum quis molestias. Vero est quam error.</p>
         </div>
@@ -104,7 +104,7 @@
   <!-- end of mission -->
 
   <!-- collection -->
-  <section class="bg-secondary py-4">
+  <section id="collection" class="bg-secondary py-4">
     <div class="container-fluid">
        <!-- title -->
        <div class="row text-white text-center">
@@ -116,7 +116,7 @@
       </div>
       <!-- end of title -->
       <div class="row">
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 cardigan">
           <div class="card border-0 card-shadow">
             <img src="./images/nature.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -124,7 +124,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 cardigan">
           <div class="card border-0 card-shadow">
             <img src="./images/wedding.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -132,7 +132,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 cardigan">
           <div class="card border-0 card-shadow">
             <img src="./images/party.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -140,7 +140,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 cardigan">
           <div class="card border-0 card-shadow">
             <img src="./images/business.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -148,7 +148,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 cardigan">
           <div class="card border-0 card-shadow">
             <img src="./images/fashion.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -156,7 +156,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4 col-sm-6 my-5">
+        <div class="col-lg-4 col-sm-6 my-5 cardigan">
           <div class="card border-0 card-shadow">
             <img src="./images/family.jpeg" class="card-img">
             <div class="card-img-overlay">
@@ -170,7 +170,7 @@
   <!-- end of collection -->
 
   <!-- gallery -->
-  <section class="py-5">
+  <section id="gallery" class="py-5">
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-muted text-center">
@@ -212,7 +212,7 @@
   <!-- end of gallery -->
 
   <!-- customers -->
-  <section class="p-5 customers">
+  <section id="customers" class="p-5 customers">
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-white text-center">
@@ -315,7 +315,7 @@
   <!-- end of customers -->
 
   <!-- pricing -->
-  <section class="bg-light text-center p-5">
+  <section id="pricing" class="bg-light text-center p-5">
     <div class="container-fluid">
       <!-- title -->
       <div class="row text-muted text-center">
@@ -338,7 +338,7 @@
                 <li class="font-weight-bold py-3 card-list-item">Graphic Design</li>
                 <li class="font-weight-bold py-3 card-list-item border-0">Video Montage</li>
               </ul>
-              <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">sign-up!</a>
+              <a href="#contact" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">sign-up!</a>
             </div>
           </div>
         </div>
@@ -354,7 +354,7 @@
                 <li class="font-weight-bold py-3 card-list-item ">Video Montage</li>
                 <li class="font-weight-bold py-3 card-list-item border-0">Clip Making</li>
               </ul>
-              <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">sign-up!</a>
+              <a href="#contact" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">sign-up!</a>
             </div>
           </div>
         </div>
@@ -369,21 +369,17 @@
                 <li class="font-weight-bold py-3 card-list-item">Graphic Design</li>
                 <li class="font-weight-bold py-3 card-list-item border-0">Video Montage</li>
               </ul>
-              <a href="#" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">sign-up!</a>
+              <a href="#contact" class="btn p-2 text-uppercase font-weight-bold price-card-button text-light">sign-up!</a>
             </div>
           </div>
         </div>
-      </div>
-      <div class="my-5">
-        <h2 class="text-muted mb-4">Thanks for being with us!</h2>
-        <i class="fas fa-coffee fa-3x"></i>
       </div>
     </div>
   </section>
   <!-- end of pricing -->
   
   <!-- contact -->
-  <section class="contact p-5">
+  <section id="contact" class="contact p-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-5 pb-4">
